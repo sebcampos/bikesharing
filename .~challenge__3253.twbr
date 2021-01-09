@@ -1,0 +1,1376 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.20.1106.0321                               -->
+<workbook source-build='2020.4.0 (20204.20.1106.0321)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='my_new_csv' inline='true' name='federated.0oas9cw08x0km916w7lnk1xdw6eq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='my_new_csv' name='textscan.0970zng11gbzui12aco0a1nkzcls'>
+            <connection class='textscan' directory='/Users/sebastian/DataScienceBootCamp/Repos/bikesharing' filename='my_new_csv.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0970zng11gbzui12aco0a1nkzcls' name='my_new_csv.csv' table='[my_new_csv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='tripduration' ordinal='0' />
+            <column datatype='datetime' name='starttime' ordinal='1' />
+            <column datatype='datetime' name='stoptime' ordinal='2' />
+            <column datatype='real' name='start station id' ordinal='3' />
+            <column datatype='string' name='start station name' ordinal='4' />
+            <column datatype='real' name='start station latitude' ordinal='5' />
+            <column datatype='real' name='start station longitude' ordinal='6' />
+            <column datatype='real' name='end station id' ordinal='7' />
+            <column datatype='string' name='end station name' ordinal='8' />
+            <column datatype='real' name='end station latitude' ordinal='9' />
+            <column datatype='real' name='end station longitude' ordinal='10' />
+            <column datatype='integer' name='bikeid' ordinal='11' />
+            <column datatype='string' name='usertype' ordinal='12' />
+            <column datatype='integer' name='birth year' ordinal='13' />
+            <column datatype='integer' name='gender' ordinal='14' />
+            <column datatype='datetime' name='new_trip_duration' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0970zng11gbzui12aco0a1nkzcls' name='my_new_csv.csv' table='[my_new_csv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='tripduration' ordinal='0' />
+            <column datatype='datetime' name='starttime' ordinal='1' />
+            <column datatype='datetime' name='stoptime' ordinal='2' />
+            <column datatype='real' name='start station id' ordinal='3' />
+            <column datatype='string' name='start station name' ordinal='4' />
+            <column datatype='real' name='start station latitude' ordinal='5' />
+            <column datatype='real' name='start station longitude' ordinal='6' />
+            <column datatype='real' name='end station id' ordinal='7' />
+            <column datatype='string' name='end station name' ordinal='8' />
+            <column datatype='real' name='end station latitude' ordinal='9' />
+            <column datatype='real' name='end station longitude' ordinal='10' />
+            <column datatype='integer' name='bikeid' ordinal='11' />
+            <column datatype='string' name='usertype' ordinal='12' />
+            <column datatype='integer' name='birth year' ordinal='13' />
+            <column datatype='integer' name='gender' ordinal='14' />
+            <column datatype='datetime' name='new_trip_duration' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tripduration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tripduration]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>tripduration</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>starttime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[starttime]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>starttime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stoptime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[stoptime]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>stoptime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station id]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>start station id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start station name]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>start station name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station latitude]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>start station latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station longitude]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>start station longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station id]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>end station id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end station name]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>end station name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station latitude]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>end station latitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station longitude]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>end station longitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bikeid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bikeid]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>bikeid</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usertype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[usertype]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>usertype</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[birth year]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>birth year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_trip_duration</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[new_trip_duration]</local-name>
+            <parent-name>[my_new_csv.csv]</parent-name>
+            <remote-alias>new_trip_duration</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Gender_New' datatype='string' name='[Calculation_228909591754534913]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [gender] = 0 then &apos;UNKNOWN&apos;&#10;    ELSEIF  [gender] = 1 then &apos;MALE&apos;&#10;    ELSEIF  [gender] = 2 then &apos;FEMALE&apos;&#10;END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='my_new_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+      <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+      <column caption='Birth Year' datatype='integer' name='[birth year]' role='dimension' type='quantitative' />
+      <column caption='End Station Id' datatype='real' name='[end station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Latitude' datatype='real' name='[end station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Longitude' datatype='real' name='[end station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='End Station Name' datatype='string' name='[end station name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='quantitative' />
+      <column caption='New Trip Duration' datatype='datetime' name='[new_trip_duration]' role='dimension' type='ordinal' />
+      <column caption='Start Station Id' datatype='real' name='[start station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Start Station Name' datatype='string' name='[start station name]' role='dimension' type='nominal' />
+      <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+      <column caption='Stoptime' datatype='datetime' name='[stoptime]' role='dimension' type='ordinal' />
+      <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+      <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+      <column-instance column='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>683</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>2374</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>5935</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>10968</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>13272</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>17401</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>22322</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>28854</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>60156</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>376711</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>360</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1253</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>3804</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>5373</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>8970</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>12036</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>16143</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>20213</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>25855</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>36252</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>164618</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>556</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1637</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4713</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>10278</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>12350</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>15418</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>17233</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>21255</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>26869</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>37467</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>266047</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>835</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>2619</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>7177</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>11317</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>14144</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>18344</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>22658</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>29381</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>110451</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>691</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>2381</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>6162</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10988</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>13632</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>17695</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>22395</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>28928</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>78525</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>384163</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>613</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>1640</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>4720</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>10329</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>12352</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>17235</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>21342</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>24204</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>27394</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>43982</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>269396</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>1097</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>3258</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>8764</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>12014</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>15813</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>19891</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>24856</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>32342</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>142680</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>432</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1300</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>3827</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>5567</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>9209</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>12084</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>16205</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>20435</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>25898</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>36389</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>170730</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>1013</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>3071</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>8067</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>11695</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>15381</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>18675</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>23208</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>31527</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>132116</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>639</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>2119</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>4967</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>10613</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>13196</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>17293</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>21631</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>27683</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>40743</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>44905</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>316849</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>854</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>2684</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>7440</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>11359</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>14820</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>18472</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>22875</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>29542</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>114905</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>876</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>2712</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>7545</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>11599</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>14858</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>18484</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>23113</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>29974</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>128573</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>1046</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>3211</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>8454</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>12002</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>15608</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>19680</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>24512</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>32054</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>140283</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>1187</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>3297</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>8944</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>12035</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>16142</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>20173</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>25232</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>36205</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>162154</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>744</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2552</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>6528</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11128</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>13875</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>17926</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>22473</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>28944</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>98959</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>408622</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>674</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>2197</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>5809</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>10907</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>13233</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>17393</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>22011</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>28570</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>50346</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>322436</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>450</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1305</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>4136</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>9063</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>9316</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>12261</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>16570</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>20943</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>26279</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>36514</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>215783</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>939</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>2729</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>7935</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>11603</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>15341</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>18553</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>23206</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>30415</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>129139</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>772</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>2564</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>6565</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>11287</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>13973</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>17984</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>22477</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>29028</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>105681</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>532</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>1519</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4335</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>9913</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>12335</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>14191</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>16813</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>21061</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>26364</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>36631</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>224566</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='tripduration' />
+        <field-sort-custom-order field='starttime' />
+        <field-sort-custom-order field='stoptime' />
+        <field-sort-custom-order field='start station id' />
+        <field-sort-custom-order field='start station name' />
+        <field-sort-custom-order field='start station latitude' />
+        <field-sort-custom-order field='start station longitude' />
+        <field-sort-custom-order field='end station id' />
+        <field-sort-custom-order field='end station name' />
+        <field-sort-custom-order field='end station latitude' />
+        <field-sort-custom-order field='end station longitude' />
+        <field-sort-custom-order field='bikeid' />
+        <field-sort-custom-order field='usertype' />
+        <field-sort-custom-order field='birth year' />
+        <field-sort-custom-order field='gender' />
+        <field-sort-custom-order field='Calculation_228909591754534913' />
+        <field-sort-custom-order field='new_trip_duration' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='my_new_csv.csv' id='my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063'>
+            <properties context=''>
+              <relation connection='textscan.0970zng11gbzui12aco0a1nkzcls' name='my_new_csv.csv' table='[my_new_csv#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='tripduration' ordinal='0' />
+                  <column datatype='datetime' name='starttime' ordinal='1' />
+                  <column datatype='datetime' name='stoptime' ordinal='2' />
+                  <column datatype='real' name='start station id' ordinal='3' />
+                  <column datatype='string' name='start station name' ordinal='4' />
+                  <column datatype='real' name='start station latitude' ordinal='5' />
+                  <column datatype='real' name='start station longitude' ordinal='6' />
+                  <column datatype='real' name='end station id' ordinal='7' />
+                  <column datatype='string' name='end station name' ordinal='8' />
+                  <column datatype='real' name='end station latitude' ordinal='9' />
+                  <column datatype='real' name='end station longitude' ordinal='10' />
+                  <column datatype='integer' name='bikeid' ordinal='11' />
+                  <column datatype='string' name='usertype' ordinal='12' />
+                  <column datatype='integer' name='birth year' ordinal='13' />
+                  <column datatype='integer' name='gender' ordinal='14' />
+                  <column datatype='datetime' name='new_trip_duration' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Checkout Times by Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my_new_csv' name='federated.0oas9cw08x0km916w7lnk1xdw6eq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oas9cw08x0km916w7lnk1xdw6eq'>
+            <column caption='Gender_New' datatype='string' name='[Calculation_228909591754534913]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [gender] = 0 then &apos;UNKNOWN&apos;&#10;    ELSEIF  [gender] = 1 then &apos;MALE&apos;&#10;    ELSEIF  [gender] = 2 then &apos;FEMALE&apos;&#10;END' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='my_new_csv.csv' datatype='integer' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='my_new_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='quantitative' />
+            <column-instance column='[new_trip_duration]' derivation='Hour' name='[hr:new_trip_duration:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[new_trip_duration]' derivation='Minute' name='[mi:new_trip_duration:qk]' pivot='key' type='quantitative' />
+            <column caption='New Trip Duration' datatype='datetime' name='[new_trip_duration]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_228909591754534913]' derivation='None' name='[none:Calculation_228909591754534913:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:new_trip_duration:ok]'>
+            <groupfilter function='level-members' level='[hr:new_trip_duration:ok]' />
+          </filter>
+          <filter class='categorical' column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_228909591754534913:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:new_trip_duration:ok]</column>
+            <column>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[mi:new_trip_duration:qk]' scope='cols' value='Minutes' />
+            <format attr='title' class='0' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' scope='rows' value='Number of Bikes' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]</rows>
+        <cols>([federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:new_trip_duration:ok] * [federated.0oas9cw08x0km916w7lnk1xdw6eq].[mi:new_trip_duration:qk])</cols>
+      </table>
+      <simple-id uuid='{8351156E-2307-45BB-8C6C-D29AC7DFCDBA}' />
+    </worksheet>
+    <worksheet name='Checkout Times for Users'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my_new_csv' name='federated.0oas9cw08x0km916w7lnk1xdw6eq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oas9cw08x0km916w7lnk1xdw6eq'>
+            <_.fcp.ObjectModelTableType.false...column caption='my_new_csv.csv' datatype='integer' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='my_new_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column-instance column='[new_trip_duration]' derivation='Hour' name='[hr:new_trip_duration:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[new_trip_duration]' derivation='Minute' name='[mi:new_trip_duration:qk]' pivot='key' type='quantitative' />
+            <column caption='New Trip Duration' datatype='datetime' name='[new_trip_duration]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:new_trip_duration:ok]'>
+            <groupfilter function='level-members' level='[hr:new_trip_duration:ok]' />
+          </filter>
+          <slices>
+            <column>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:new_trip_duration:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' scope='rows' value='Number of Bikes' />
+            <format attr='title' class='0' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[mi:new_trip_duration:qk]' scope='cols' value='Minutes' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]</rows>
+        <cols>([federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:new_trip_duration:ok] * [federated.0oas9cw08x0km916w7lnk1xdw6eq].[mi:new_trip_duration:qk])</cols>
+      </table>
+      <simple-id uuid='{A72C8544-C061-45CE-A594-39FBA129F3B3}' />
+    </worksheet>
+    <worksheet name='Trips by Gender (Weekday per Hour)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my_new_csv' name='federated.0oas9cw08x0km916w7lnk1xdw6eq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oas9cw08x0km916w7lnk1xdw6eq'>
+            <column caption='Gender_New' datatype='string' name='[Calculation_228909591754534913]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [gender] = 0 then &apos;UNKNOWN&apos;&#10;    ELSEIF  [gender] = 1 then &apos;MALE&apos;&#10;    ELSEIF  [gender] = 2 then &apos;FEMALE&apos;&#10;END' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='my_new_csv.csv' datatype='integer' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='my_new_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_228909591754534913]' derivation='None' name='[none:Calculation_228909591754534913:nk]' pivot='key' type='nominal' />
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column caption='Stoptime' datatype='datetime' name='[stoptime]' role='dimension' type='ordinal' />
+            <column-instance column='[stoptime]' derivation='Weekday' name='[wd:stoptime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_228909591754534913:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:starttime:ok]' value='ih a' />
+            <format attr='text-format' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[wd:stoptime:ok]' value='ieee' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:starttime:ok]</rows>
+        <cols>([federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk] / [federated.0oas9cw08x0km916w7lnk1xdw6eq].[wd:stoptime:ok])</cols>
+      </table>
+      <simple-id uuid='{9E684424-C2C0-496B-A673-FF16B172E368}' />
+    </worksheet>
+    <worksheet name='Trips by Weekday per Hour'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my_new_csv' name='federated.0oas9cw08x0km916w7lnk1xdw6eq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oas9cw08x0km916w7lnk1xdw6eq'>
+            <_.fcp.ObjectModelTableType.false...column caption='my_new_csv.csv' datatype='integer' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='my_new_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column caption='Stoptime' datatype='datetime' name='[stoptime]' role='dimension' type='ordinal' />
+            <column-instance column='[stoptime]' derivation='Weekday' name='[wd:stoptime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:starttime:ok]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:starttime:ok]' value='ih a' />
+            <format attr='text-format' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[wd:stoptime:ok]' value='ieee' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:starttime:ok]</rows>
+        <cols>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[wd:stoptime:ok]</cols>
+      </table>
+      <simple-id uuid='{03C8A042-20C6-46E5-B865-75B043D063F9}' />
+    </worksheet>
+    <worksheet name='User Trips by Gender by Weekday'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my_new_csv' name='federated.0oas9cw08x0km916w7lnk1xdw6eq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oas9cw08x0km916w7lnk1xdw6eq'>
+            <column caption='Gender_New' datatype='string' name='[Calculation_228909591754534913]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [gender] = 0 then &apos;UNKNOWN&apos;&#10;    ELSEIF  [gender] = 1 then &apos;MALE&apos;&#10;    ELSEIF  [gender] = 2 then &apos;FEMALE&apos;&#10;END' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='my_new_csv.csv' datatype='integer' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='my_new_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_228909591754534913]' derivation='None' name='[none:Calculation_228909591754534913:nk]' pivot='key' type='nominal' />
+            <column-instance column='[usertype]' derivation='None' name='[none:usertype:nk]' pivot='key' type='nominal' />
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+            <column-instance column='[starttime]' derivation='Weekday' name='[wd:starttime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_228909591754534913:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:usertype:nk]'>
+            <groupfilter function='level-members' level='[none:usertype:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]</column>
+            <column>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:usertype:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:usertype:nk] / [federated.0oas9cw08x0km916w7lnk1xdw6eq].[wd:starttime:ok])</rows>
+        <cols>[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]</cols>
+      </table>
+      <simple-id uuid='{F9005A9D-E9C2-459A-A7B7-BD71BA87578F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Checkout Times for Users'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:new_trip_duration:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2854E7D5-53B4-4449-8D57-C646527DEE72}' />
+    </window>
+    <window class='worksheet' name='Checkout Times by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[hr:new_trip_duration:ok]' type='filter' />
+            <card param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5B0A3627-9BC4-4D80-9E56-6CCC40CC4AFA}' />
+    </window>
+    <window class='worksheet' name='Trips by Weekday per Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D064FE01-A4FB-4BF4-90EC-341E2E3C99F0}' />
+    </window>
+    <window class='worksheet' name='Trips by Gender (Weekday per Hour)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]' type='filter' />
+            <card pane-specification-id='6' param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C48ECABB-F882-4891-965D-CADCD2D99A17}' />
+    </window>
+    <window class='worksheet' maximized='true' name='User Trips by Gender by Weekday'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:Calculation_228909591754534913:nk]' type='filter' />
+            <card param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[none:usertype:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0oas9cw08x0km916w7lnk1xdw6eq].[__tableau_internal_object_id__].[cnt:my_new_csv.csv_23FF6F0265D3479FA61017CFC5C52063:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{D6301CE2-A78F-4B6F-B95E-3B11DFF6EFDD}' />
+    </window>
+  </windows>
+</workbook>
